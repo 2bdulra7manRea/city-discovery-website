@@ -1,0 +1,158 @@
+.header_box{
+
+width:50%;
+text-align: center;
+
+}
+.header_box>*{
+    margin:20px;
+}
+
+.text{
+    width:100%;
+    text-align: center;
+}
+
+.container{
+    width:100%;
+    height:100%;
+}
+
+.item_box_content_icon i{
+font-size:60px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.Bigcolor{
+background-color: rgb(248, 50, 50);
+color: white;
+cursor: pointer;
+  }
+
+  .box{
+      justify-content: space-around;
+      flex-flow: row wrap;
+      width:80%;
+  }
+  .center{
+      justify-content: center;
+  }
+  .item_box_content>*{
+      
+      display: block;
+      padding:10px;
+      font-weight: normal;
+  }
+  .item_box{
+      background-color: rgb(255, 255, 255);
+      padding:10px;
+      margin:5px;
+      height:300px;
+      border-radius:10px;
+      box-shadow:1px 1px 3px lightgray;
+      transition:.5s ease-out;
+      cursor: pointer;
+    }
+   
+    .item_box:hover{
+        color: white;
+        background-color:rgb(248, 50, 50);
+    }
+    .item_box span{
+        padding:5px;
+        color: rgb(248, 50, 50);
+        margin:1px 4px 1px 4px;
+        background-color: rgb(253, 253, 253);
+        border-radius:5px;
+    }
+
+    .m{
+        margin-top:100px;
+        margin-bottom:100px;
+    }
+
+
+.title{
+    width:100%;
+    padding:20px;
+
+}
+.title h2{
+    font-size:70px;
+    
+}
+.ads{
+    
+    height:300px;
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: row wrap;
+
+}
+.ads_img{
+    height:100%;
+    width:30%;
+}
+.ads_img img{
+    width:100%;
+    height:100%;
+}
+
+.ads_body{
+    background-image: url('https://images.unsplash.com/photo-1581095146373-cd331553812f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80');
+    width:70%;
+
+}
+
+.ads_body h1 {
+    font-size:40px;
+    color: white;
+    text-transform: capitalize;
+    padding:20px;
+}
+.about_img{
+
+height:800px;
+
+}
+.about{
+    background-color: white;
+    
+}
+.about_body{
+ width:70%; 
+ padding:20px;  
+}
+.about_body >*{
+    margin:70px;
+}
+
+.about h1{
+    font-size:60px;
+}
+.about p {
+    line-height:40px;
+    font-size:30px;
+    font-style: italic;
+
+}
+
+.about_img img{
+
+width:80%;
+margin-left:70px;
+height:100%;
+
+}
+
+.item_box_content_icon{
+    text-align: center;
+    background-color:white;
+}

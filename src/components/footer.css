@@ -1,0 +1,20 @@
+.footer{
+    width:100%; 
+  color: wheat;
+padding:100px;
+    background-color: rgb(10, 0, 34);
+}
+.footer h1 {
+    margin-bottom:40px;
+}
+.footer ul{
+list-style-type: none;
+padding:10px;
+color: gray;
+}
+.footer ul li {
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color: crimson;
+}
