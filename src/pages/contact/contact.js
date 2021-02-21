@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import FooterComponenet from "../../components/footer";
 import "./contact.css";
 import aos from 'aos';
-export default function Contact(params) {
+export default function Contact() {
   useEffect(() => {
     aos.init({ duration: 1000 });
   }, []);

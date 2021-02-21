@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ItemBlog from '../../components/itemBlog'
 import aos from 'aos';
-export default function Blog(params) {
+export default function Blog() {
     
 useEffect(()=>{
 aos.init({duration:1000})

@@ -5,7 +5,7 @@ import'./home.css';
 import FooterComponenet from "../../components/footer";
 import aos from 'aos'
 
-export default function Home(params) {
+export default function Home() {
 
 
 useEffect(()=>{

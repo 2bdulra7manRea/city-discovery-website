@@ -1,5 +1,5 @@
 import './footer.css'
-export default function FooterComponenet(params) {
+export default function FooterComponenet() {
     
     return(<>
     

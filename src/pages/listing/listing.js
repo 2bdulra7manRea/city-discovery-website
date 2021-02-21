@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Card from '../../components/card';
 import aos from 'aos'
 import 'aos/dist/aos.css';
-export default function Listing(params) {
+export default function Listing() {
    
 useEffect(()=>{
 
