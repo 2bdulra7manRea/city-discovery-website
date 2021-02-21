@@ -32,7 +32,7 @@ export default function Contact() {
 
             <form>
               <div className="flex list row">
-                <div className="col-4">
+                <div className="col-6">
                   <h3>Address:</h3>
                   <ul>
                     <li>198 West 21th Street,</li>
@@ -41,7 +41,7 @@ export default function Contact() {
                   </ul>
                 </div>
 
-                <div className="col-4">
+                <div className="col-6">
                   <h3>Email:</h3>
                   <ul>
                    
@@ -49,12 +49,7 @@ export default function Contact() {
 
                   </ul>
                 </div>
-                <div className="col-4">
-                  <h3>Name:</h3>
-                  <ul>
-                    <li>Abdelrahman</li>
-                  </ul>
-                </div>
+
               </div>
               <input type="text" placeholder="Name"></input>
               <input type="email" placeholder="E-mail"></input>

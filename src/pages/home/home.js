@@ -4,7 +4,7 @@ import Card from '../../components/card';
 import'./home.css';
 import FooterComponenet from "../../components/footer";
 import aos from 'aos'
-
+import 'font-awesome/css/font-awesome.min.css';
 export default function Home() {
 
 

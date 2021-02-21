@@ -1,11 +1,6 @@
-.header_box{
 
-width:50%;
-text-align: center;
-
-}
 .header_box>*{
-    margin:20px;
+    margin:20px 0px 20px 0px;
 }
 
 .text{

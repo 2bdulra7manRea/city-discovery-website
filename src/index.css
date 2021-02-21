@@ -53,12 +53,22 @@ html{
   cursor: pointer;
  
 }
+
+.header_box{
+  width:60%;
+  text-align: center;
+}
 .search input , button{
-  padding:20px;
+  padding:15px;
   font-size:20px;
   border: none;
   outline: none;
 }
+.brand {
+  color: #fff;
+  font-size: 34px;
+}
+
 @media only screen and (max-width:800px){
   .col-lg-1 {width: 8.33%;}
   .col-lg-2 {width: 16.66%;}
@@ -75,5 +85,45 @@ html{
   .first_title{
     font-size:50px;
   }
+  .search{
+   transform: translateY(50px);
+    width:100%;
+    position:fixed;
+    z-index:10;
+    bottom:0;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:2px 2px 4px #808080 , -2px -3px 4px gray;
+    padding:20px 0px 20px 0px;
+  }
+  .header_box{
+    width:100%;
+    
+  }
+ 
+.search input[placeholder="Search loaction"]{
+  display: none;
+}
+
+.nav{
+  position: fixed;
+  top:0;
+  z-index:10;
+  background-color: white;
+width:100%;
+}
+.nav ul li a{
+  color: indigo;
+}
+.nav ul li a:hover{
+color: crimson;
+}
+.brand{
+  color: crimson;
+}
+
+.nav button{
+  visibility: hidden;
+}
 
 }

@@ -24,13 +24,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .nav li a.selected{
     color: whitesmoke;
 }
-.brand{
-    color: white;
-    font-size:34px;
-}
 
 .nav li a:hover{
     outline: none;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.849);
 }
