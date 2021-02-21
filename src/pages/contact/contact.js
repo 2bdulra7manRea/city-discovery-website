@@ -1,32 +1,77 @@
+import { useEffect } from "react";
+import FooterComponenet from "../../components/footer";
+import "./contact.css";
+import aos from 'aos';
 export default function Contact(params) {
-    
-    return(<>
-    
-<div className='row m about'>
+  useEffect(() => {
+    aos.init({ duration: 1000 });
+  }, []);
 
-<div className='col-4 about_img col-lg-12'>
-<img src='https://images.unsplash.com/photo-1524282592407-25bf4101ac81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'></img>
-</div>
-<div className='col-8 flex col-lg-12'>
-<div className='about_body'>
-    <h1>Directone A Directory & Listing</h1>
-    <p>Far far away, behind the word mountains, far from the
-         countries Vokalia and Consonantia, there live the
-          blind texts. Separated they live in Bookmarksgrove 
-          right at the coast of the Semantics, a large language ocean.
-A small river named Duden flows by their place and supplies it 
-with the necessary regelialia. It is a paradisematic country, 
-in which roasted parts of sentences fly into your mouth.</p>
-</div>
-</div>
+  return (
+    <>
+      <div className="container">
+        <div className="row flex">
+          <div className="header_box">
+            <div className="text m">
+              <h1 className="first_title">CONTACT US </h1>
+            </div>
+            <div className="search">
+              <input
+                type="search"
+                placeholder="what are you looking for"
+              ></input>
+              <input type="text" placeholder="Search loaction"></input>
+              <button className="Bigcolor">search</button>
+            </div>
+          </div>
+        </div>
+<div style={{height:'200px'}}></div>
+        <div className="row m about">
+          <div className="col-7 contact flex col-lg-12" data-aos='slide-right' >
+            <h1>contact us</h1>
 
+            <form>
+              <div className="flex list row">
+                <div className="col-4">
+                  <h3>Address:</h3>
+                  <ul>
+                    <li>198 West 21th Street,</li>
+                    <li>Suite 721 New York NY</li>
+                    <li>10016</li>
+                  </ul>
+                </div>
 
+                <div className="col-4">
+                  <h3>Email:</h3>
+                  <ul>
+                    <li>Company@company.eg</li>
+                  </ul>
+                </div>
+                <div className="col-4">
+                  <h3>Phone:</h3>
+                  <ul>
+                    <li>+20549994</li>
+                  </ul>
+                </div>
+              </div>
+              <input type="text" placeholder="Name"></input>
+              <input type="email" placeholder="E-mail"></input>
+              <input type="text" placeholder="Subject"></input>
+              <textarea cols="10" rows="4"></textarea>
+            </form>
+            <button className="Bigcolor">Send Message</button>
+          </div>
+          <div className="col-5 col-lg-12" >
+            <img
+              src="https://images.unsplash.com/photo-1528493366314-e317cd98dd52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+              style={{ width: "100%", height: "600px" }}
+              data-aos='fade-left'
+            ></img>
+          </div>
+        </div>
 
-</div>
-
-
-    
-    
-    </>)
-    
-    }
+        <FooterComponenet></FooterComponenet>
+      </div>
+    </>
+  );
+}

@@ -1,8 +1,20 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '../../components/card';
+import aos from 'aos'
+import 'aos/dist/aos.css';
 export default function Listing(params) {
    
+useEffect(()=>{
+
+aos.init({
+    duration:2000
+
+})
+
+},[])
+
+
 const [cardInfo , setCardinfo]=useState([
     {title:'harbor light hotel' , location:'los anglus' , phone:'098833333332', reviews:10, icon:'' , img:''},
     {title:'harbor light hotel' , location:'los anglus' , phone:'098833333332', reviews:10, icon:'' , img:''},
@@ -48,10 +60,10 @@ const [cardInfo , setCardinfo]=useState([
     </div>
 
 
-{cardInfo.map((carddata)=>{
-return(<>
-<Card info={carddata}></Card>
-</>)
+{cardInfo.map((carddata , index)=>{
+return(
+<Card data-aos="slide-up" key={index} info={carddata}></Card>
+)
 })}
 
 

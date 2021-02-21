@@ -4,7 +4,7 @@ export default function FooterComponenet(params) {
     return(<>
     
     <div className='footer row'>
-<div className='col-3'>
+<div className='col-3 col-lg-6'>
 <h1 className='brand'>Discovery</h1>
 <p>
 A small river named 
@@ -13,7 +13,7 @@ Duden flows by their
 </p>
 
 </div>
-<div className='col-3'>
+<div className='col-3 col-lg-6'>
 <h1 className='brand'>EXPLORE</h1>
 <ul>
     <li>About us</li>
@@ -26,7 +26,7 @@ Duden flows by their
 
 
 
-<div className='col-3'>
+<div className='col-3 col-lg-6'>
 <h1 className='brand'>Categories</h1>
 <ul>
     <li>Home</li>
@@ -37,7 +37,7 @@ Duden flows by their
 </ul>
 </div>
 
-<div className='col-3'>
+<div className='col-3 col-lg-6'>
 <h1 className='brand'>Quick Links</h1>
 <ul>
     <li>About us</li>

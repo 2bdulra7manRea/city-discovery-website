@@ -5,6 +5,7 @@ import Blog from "./blogs/blogs";
 import Contact from "./contact/contact";
 import Listing from "./listing/listing";
 import './App.css'
+import aos from 'aos'
 export default function App() {
     
 

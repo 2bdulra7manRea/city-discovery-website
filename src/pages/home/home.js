@@ -1,11 +1,22 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Card from '../../components/card';
 import'./home.css';
 import FooterComponenet from "../../components/footer";
-
+import aos from 'aos'
 
 export default function Home(params) {
+
+
+useEffect(()=>{
+aos.init({
+    duration:2000,
+    easing:'ease-in-out',
+    delay:200,
+    offset:200
+})
+
+},[])
 
 
 const [items , setitems]=useState([
@@ -64,9 +75,9 @@ return(<>
 <section className='box flex col-8'>
 
 {items.map((itm , index)=>{
-return(<>
+return(
 
-<section key={index} className='flex item_box col-2 col-lg-12'>
+<section data-aos='slide-up' key={index} className='flex item_box col-2 col-lg-12'>
 <div className='item_box_content'>
 <span className='item_box_content_icon'> <i className={itm.icon}></i></span>    
    
@@ -74,7 +85,7 @@ return(<>
 <h3> <span>{itm.list}</span>listing</h3>
 </div>
 </section>
-</>)
+)
 })}
 </section>
 </div>
@@ -88,10 +99,10 @@ return(<>
     </div>
 
 
-{cardInfo.slice(0,4).map((carddata)=>{
-return(<>
-<Card info={carddata}></Card>
-</>)
+{cardInfo.slice(0,4).map((carddata ,index)=>{
+return(
+<Card data-aos='slide-up' key={index} info={carddata}></Card>
+)
 })}
 
 
@@ -102,7 +113,7 @@ return(<>
 
 <div className='row m'>
 <div className='col-2'></div>
-<div className='col-10 ads'>
+<div className='col-10 ads' data-aos='slide-left'>
 <div className='ads_img'>
 <img src='https://images.unsplash.com/photo-1607675641274-fbac1def9d94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'></img>
 </div>
@@ -131,10 +142,10 @@ return(<>
     </div>
 
 
-{cardInfo.map((carddata)=>{
-return(<>
-<Card info={carddata}></Card>
-</>)
+{cardInfo.map((carddata , index)=>{
+return(
+<Card data-aos='slide-up' key={index} info={carddata}></Card>
+)
 })}
 
 
@@ -150,10 +161,10 @@ return(<>
 
 <div className='row m about'>
 
-<div className='col-4 about_img col-lg-12'>
+<div className='col-4 about_img col-lg-12' data-aos='slide-right'>
 <img src='https://images.unsplash.com/photo-1524282592407-25bf4101ac81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'></img>
 </div>
-<div className='col-8 flex col-lg-12'>
+<div className='col-8 flex col-lg-12' data-aos='slide-left'>
 <div className='about_body'>
     <h1>Directone A Directory & Listing</h1>
     <p>Far far away, behind the word mountains, far from the

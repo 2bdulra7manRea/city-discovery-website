@@ -1,8 +1,12 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ItemBlog from '../../components/itemBlog'
+import aos from 'aos';
 export default function Blog(params) {
     
+useEffect(()=>{
+aos.init({duration:1000})
 
+},[])
 const [cardInfo , setCardinfo]=useState([
 
 {title:'Explore The Best Restaurant in New York' 
@@ -47,9 +51,9 @@ const [cardInfo , setCardinfo]=useState([
     </div>
 
 
-{cardInfo.map((carddata)=>{
+{cardInfo.map((carddata , index)=>{
 return(<>
-<ItemBlog blog={carddata}></ItemBlog>
+<ItemBlog data-aos='slide-up' key={index} blog={carddata}></ItemBlog>
 
 </>)
 })}
