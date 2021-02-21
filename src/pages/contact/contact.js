@@ -36,7 +36,7 @@ export default function Contact(params) {
                   <h3>Address:</h3>
                   <ul>
                     <li>198 West 21th Street,</li>
-                    <li>Suite 721 New York NY</li>
+                    <li>Suite 721 Egypt NY</li>
                     <li>10016</li>
                   </ul>
                 </div>
@@ -44,13 +44,15 @@ export default function Contact(params) {
                 <div className="col-4">
                   <h3>Email:</h3>
                   <ul>
+                   
                     <li>Company@company.eg</li>
+
                   </ul>
                 </div>
                 <div className="col-4">
-                  <h3>Phone:</h3>
+                  <h3>Name:</h3>
                   <ul>
-                    <li>+20549994</li>
+                    <li>Abdelrahman</li>
                   </ul>
                 </div>
               </div>
