@@ -23,6 +23,16 @@ html{
   scroll-behavior: smooth;
 }
 
+.about h1{
+  font-size:60px;
+}
+.about p {
+  line-height:40px;
+  font-size:30px;
+  font-style: italic;
+
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -124,6 +134,10 @@ color: crimson;
 
 .nav button{
   visibility: hidden;
+}
+
+.about_body h1 , .about_body p{
+font-size: 20px;
 }
 
 }

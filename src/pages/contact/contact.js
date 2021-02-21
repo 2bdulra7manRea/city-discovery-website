@@ -27,7 +27,7 @@ export default function Contact() {
         </div>
 <div style={{height:'200px'}}></div>
         <div className="row m about">
-          <div className="col-7 contact flex col-lg-12" data-aos='slide-right' >
+          <div className="col-7 contact flex col-lg-12" data-aos='slide-up' >
             <h1>contact us</h1>
 
             <form>
@@ -62,7 +62,7 @@ export default function Contact() {
             <img
               src="https://images.unsplash.com/photo-1528493366314-e317cd98dd52?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
               style={{ width: "100%", height: "600px" }}
-              data-aos='fade-left'
+              data-aos='fade-up'
             ></img>
           </div>
         </div>

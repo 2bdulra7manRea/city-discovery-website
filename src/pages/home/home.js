@@ -113,7 +113,7 @@ return(
 
 <div className='row m'>
 <div className='col-2'></div>
-<div className='col-10 ads' data-aos='slide-left'>
+<div className='col-10 ads'>
 <div className='ads_img'>
 <img src='https://images.unsplash.com/photo-1607675641274-fbac1def9d94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'></img>
 </div>
@@ -144,7 +144,7 @@ return(
 
 {cardInfo.map((carddata , index)=>{
 return(
-<Card data-aos='slide-up' key={index} info={carddata}></Card>
+<Card data-aos='fade-up' key={index} info={carddata}></Card>
 )
 })}
 
@@ -161,10 +161,10 @@ return(
 
 <div className='row m about'>
 
-<div className='col-4 about_img col-lg-12' data-aos='slide-right'>
+<div className='col-4 about_img col-lg-12'>
 <img src='https://images.unsplash.com/photo-1524282592407-25bf4101ac81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80'></img>
 </div>
-<div className='col-8 flex col-lg-12' data-aos='slide-left'>
+<div className='col-8 flex col-lg-12' >
 <div className='about_body'>
     <h1>Directone A Directory & Listing</h1>
     <p>Far far away, behind the word mountains, far from the
